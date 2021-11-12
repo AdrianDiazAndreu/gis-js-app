@@ -29,6 +29,12 @@ function getLocation() {
 function showPosition(position) {
   x.innerHTML = "Latitude: " + position.coords.latitude + 
   "<br>Longitude: " + position.coords.longitude;
+
+  var chino = document.createElement("a") ;
+  chino.href = "chino.jpg" ;
+  var butt = document.createElement("button") ;
+  chino.append(butt) ;
+  x.innerHTML = chino ;
 }
 
 function showError(error) {
