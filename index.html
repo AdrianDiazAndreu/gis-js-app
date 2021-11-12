@@ -28,18 +28,27 @@ function getLocation() {
   } else { 
     x.innerHTML = "Geolocation is not supported by this browser.";
   }
+  var chino_good = document.createElement("a") ;
+  chino_good.href = "chino.jpg" ;
+  var butt = document.createElement("button") ;
+  butt.innerHTML = "Click here if you like China" ;
+  chino_good.appendChild(butt) ;
+  y.appendChild(chino_good) ;
+
+  var chino_bad = document.createElement("a") ;
+  chino_bad.href = "chino_bad.jpeg" ;
+  var butt_bad = document.createElement("button") ;
+  butt_bad.innerHTML = "Click here if you don't like China" ;
+  chino_bad.appendChild(butt_bad) ;
+  y.appendChild(chino_bad) ;
 }
 
 function showPosition(position) {
   x.innerHTML = "Latitude: " + position.coords.latitude + 
   "<br>Longitude: " + position.coords.longitude;
+  var xd = "hola" ;
+  return xd ;
 
-  var chino = document.createElement("a") ;
-  chino.href = "chino.jpg" ;
-  var butt = document.createElement("button") ;
-  butt.innerHTML = "Click here to complete the program" ;
-  chino.appendChild(butt) ;
-  y.appendChild(chino) ;
 
   
 }
