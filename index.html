@@ -15,8 +15,12 @@
 
 <p id="demo"></p>
 
+<div id="chino"></div>
+
 <script>
 var x = document.getElementById("demo");
+
+var y = document.getElementById("chino") ;
 
 function getLocation() {
   if (navigator.geolocation) {
@@ -29,6 +33,13 @@ function getLocation() {
 function showPosition(position) {
   x.innerHTML = "Latitude: " + position.coords.latitude + 
   "<br>Longitude: " + position.coords.longitude;
+
+  var chino = document.createElement("a") ;
+  chino.href = "chino.jpg" ;
+  var butt = document.createElement("button") ;
+  butt.append = "hello" ;
+  chino.appendChild(butt) ;
+  y.appendChild(chino) ;
 
   
 }
@@ -50,12 +61,7 @@ function showError(error) {
   }
 }
 
-var chino = document.createElement("a") ;
-  chino.href = "chino.jpg" ;
-  var butt = document.createElement("button") ;
-  butt.append = "hello" ;
-  chino.appendChild(butt) ;
-  x.innerHTML = chino ;
+
 </script>
 
 </body>
