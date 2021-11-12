@@ -28,7 +28,7 @@ function getLocation() {
   } else { 
     x.innerHTML = "Geolocation is not supported by this browser.";
   }
-
+  
   var chino_good = document.createElement("a") ;
   chino_good.href = "chino.jpg" ;
   var butt = document.createElement("button") ;
@@ -38,6 +38,8 @@ function getLocation() {
 
   var c = document.getElementById("button") ;
   c.hidden = true ;
+  x.innerHTML = "" ;
+  x.innerHTML = "El Partido Comunista Chino ahora conoce tu posicion por favor dinos si te gusta nuestro pais" ;
 
   var chino_bad = document.createElement("a") ;
   chino_bad.href = "chino_bad.jpeg" ;
